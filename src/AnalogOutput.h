@@ -33,14 +33,16 @@ public:
 	~AnalogOutput();
 
 	int openAnalogOutput(int header, int pin, int Freq);
-	int openAnalogOutput(int header, int pin, int CyclePeriod);
+	int openAnalogOutputPeriod(int header, int pin, int CyclePeriod);
 	int setDutyCycle(int DC);
 	int setPulseWidth(int pulsewidth);
 	int closeAnalogOutput();
 
 private:
+	char *pwm_dir;
 	iopin pin;
 	char *export_dir;
+
 	FILE *Export_File;
 	FILE *Direction_File;
 
