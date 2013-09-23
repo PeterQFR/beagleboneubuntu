@@ -372,7 +372,7 @@ void iopin::openPin(int bank, int pin, int mode, bool pullup)
 
 	//cout << "Mux Handle " << MuxFile << endl;
 
-	fwrite(muxsettings, sizeof(char), 6, MuxFile);
+	fwrite(muxsettings, sizeof(char), 2, MuxFile);
 
 	cout << "file written: " << muxsettings << endl;
 

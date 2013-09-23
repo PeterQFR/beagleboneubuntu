@@ -1,5 +1,5 @@
 /*
- * This Library was taken from prianna32's library on github https://github.com/piranha32/IOoo.git
+ * This Library was copied from prianna32's library on github https://github.com/piranha32/IOoo.git
  * SPI.h
  *
  *  Created on: Jun 2, 2013
@@ -8,6 +8,7 @@
 
 #include <stdint.h>
 #include <linux/spi/spidev.h>
+#include <iopin.h>
 
 #ifndef SPI_H_
 #define SPI_H_
@@ -15,6 +16,7 @@
 class SPI
 {
 	private:
+		iopin MISO, MOSI, CS, CLK;
 		uint8_t mode;
 		uint8_t bpw;
 		bool lsb_first;

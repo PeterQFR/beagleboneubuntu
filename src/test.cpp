@@ -8,37 +8,54 @@
 
 #include "DigitalInput.h"
 #include "DigitalOutput.h"
+#include "AnalogOutput.h"
+#include "unistd.h"
+#include "SPI.h"
 
 using namespace std;
 
 int main() {
-	cout << "writing mux settings " << endl; // prints !!!Hello World!!!
+	SPI jointencoder = new SPI();
 
-	DigitalInput pin;
-	DigitalOutput pin2;
 
-	int suc = pin.openDigitalInput(9, 11);
+	jointencoder.open(0,1);
 
-	int suc2 = pin2.openDigitalOutput(9, 13);
-
-	cout << "Digital Pin Opened" << endl;
-
+	jointencoder.setSpeed(500000);
+	uint8_t* readbuf;
 
 	while(1)
 	{
-		bool res = false;
-		res =pin.read();
+		jointencoder.read(readbuf, 2);
 
-		if(res)
-		{
-			pin2.write(true);
-		}
-		else if (!res)
-		{
-			pin2.write(false);
-		}
+		printf("joint encoder %i \n", readbuf);
 
 	}
+
+
+//	cout << "writing mux settings " << endl; // prints !!!Hello World!!!
+//
+//
+//	AnalogOutput pin;
+//
+//	int suc = pin.openAnalogOutput(9, 42, 1000);
+//
+//	int foo = pin.setDutyCycle(0);
+//
+//	cout << "Analog Pin Opened" << endl;
+//
+//	int Dpc =0;
+//	while(1)
+//	{
+//		Dpc++;
+//        sleep(1);
+//		pin.setDutyCycle(Dpc);
+//
+//		if (Dpc >100)
+//		{
+//			Dpc =0;
+//		}
+//
+//	}
 
 	}
 

@@ -33,6 +33,28 @@ int SPI::open(int bus, int channel)
 	if (active)
 		close();
 
+	//Set the outputs as per their required
+	//d0 output
+	//clk output
+	//di input
+	//cs output
+	if (channel==0)
+	{
+		MOSI.openPin(9, 18, 3, true);
+		MISO.openPin(9, 21, 3, true);
+		CS.openPin(9, 17, 3, true);
+		CLK.openPin(9, 22, 3, true);
+
+	}
+	else if (channel==1)
+	{
+		MOSI.openPin(9, 29, 3, true);
+		MISO.openPin(9, 30, 3, true);
+		CS.openPin(9, 28, 3, true);
+		CLK.openPin(9, 31, 3, true);
+	}
+
+
 	if (bus < 0 || channel < 0)
 		return -ENODEV;
 

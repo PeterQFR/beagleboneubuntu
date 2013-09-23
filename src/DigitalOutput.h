@@ -18,7 +18,7 @@
 #include "iopin.h"
 #include <stdio.h>
 #include <iostream>
-#include <cstring>
+#include <string.h>
 #include <stdlib.h>
 
 

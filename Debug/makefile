@@ -44,7 +44,7 @@ all: au.net.qfr.git.BeagleBoneUbuntu
 au.net.qfr.git.BeagleBoneUbuntu: $(OBJS) $(USER_OBJS)
 	@echo 'Building target: $@'
 	@echo 'Invoking: GCC C++ Linker'
-	g++  -o "au.net.qfr.git.BeagleBoneUbuntu" $(OBJS) $(USER_OBJS) $(LIBS)
+	arm-linux-gnueabihf-g++ -L/usr/arm-linux-gnueabihf/lib -o "au.net.qfr.git.BeagleBoneUbuntu" $(OBJS) $(USER_OBJS) $(LIBS)
 	@echo 'Finished building target: $@'
 	@echo ' '
 

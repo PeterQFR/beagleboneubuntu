@@ -18,7 +18,7 @@
 #include "iopin.h"
 #include <stdio.h>
 #include <iostream>
-#include <cstring>
+#include <string.h>
 #include <stdlib.h>
 
 
@@ -33,18 +33,26 @@ public:
 	~AnalogOutput();
 
 	int openAnalogOutput(int header, int pin, int Freq);
-	int openAnalogOutputPeriod(int header, int pin, int CyclePeriod);
+	int openAnalogOutputPeriod(int header, int pint, int CyclePeriod);
 	int setDutyCycle(int DC);
 	int setPulseWidth(int pulsewidth);
 	int closeAnalogOutput();
 
 private:
-	char *pwm_dir;
+
 	iopin pin;
+
+	char *pwm_dir;
 	char *export_dir;
 
 	FILE *Export_File;
 	FILE *Direction_File;
+	FILE *Request_File;
+	FILE *Run_File;
+	FILE *Period_freq_File;
+	FILE *Period_ns_File;
+	FILE *DutyPC_File;
+	FILE *DutyNS_File;
 
 
 };
