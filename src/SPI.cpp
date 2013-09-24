@@ -40,19 +40,19 @@ int SPI::open(int bus, int channel)
 	//cs output
 	if (channel==0)
 	{
-		MOSI.openPin(9, 18, 3, true);
-		MISO.openPin(9, 21, 3, true);
-		CS.openPin(9, 17, 3, true);
-		CLK.openPin(9, 22, 3, true);
+		MOSI.openPin(9, 18, 3, true, false);
+		MISO.openPin(9, 21, 3, true, true);
+		CS.openPin(9, 17, 3, true, false);
+		CLK.openPin(9, 22, 3, true, false);
 
 	}
-	else if (channel==1)
-	{
-		MOSI.openPin(9, 29, 3, true);
-		MISO.openPin(9, 30, 3, true);
-		CS.openPin(9, 28, 3, true);
-		CLK.openPin(9, 31, 3, true);
-	}
+//	else if (channel==1)
+//	{
+//		MOSI.openPin(9, 29, 0, true);
+//		MISO.openPin(9, 30, 0, true);
+//		CS.openPin(9, 28, 0, true);
+//		CLK.openPin(9, 31, 0, true);
+//	}
 
 
 	if (bus < 0 || channel < 0)

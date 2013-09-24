@@ -31,7 +31,7 @@ private:
 public:
 
 	iopin();
-	void openPin(int bank, int pin, int mode, bool pullup);
+	void openPin(int bank, int pin, int mode, bool pullup, bool input);
 
 	~iopin();
 	char* getGPIONumber();

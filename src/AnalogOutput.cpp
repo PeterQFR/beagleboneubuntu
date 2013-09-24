@@ -48,33 +48,33 @@ int AnalogOutput::openAnalogOutputPeriod(int header, int pint, int CyclePeriod)
 			{
 
 					pwm_dir = "ehrpwm.2:0/";
-					pin.openPin(header, pint, 3, true);
+					pin.openPin(header, pint, 3, true, true);
 
 			}
 			else if (pint== 46)
 			{
 					pwm_dir = "ehrpwm.2:1/";
-					pin.openPin(header, pint, 3, true);
+					pin.openPin(header, pint, 3, true, true);
 			}
 			else if (pint == 34)
 			{
 				    pwm_dir = "ehrpwm.1:1";
-				    pin.openPin(header, pint, 2, true);
+				    pin.openPin(header, pint, 2, true, true);
 			}
 			else if(pint == 36)
 			{
 					pwm_dir = "ehrpwm.1:0/";
-					pin.openPin(header, pint, 2, true);
+					pin.openPin(header, pint, 2, true, true);
 			}
 			else if (pint == 13)
 			{
 					pwm_dir = "ehrpwm.2:1/";
-					pin.openPin(header, pint, 4, true);
+					pin.openPin(header, pint, 4, true, true);
 			}
 			else if(pint ==19)
 			{
 					pwm_dir = "ehrpwm.2:0/";
-					pin.openPin(header, pint, 4, true);
+					pin.openPin(header, pint, 4, true, true);
 			}
 			else
 			{
@@ -88,32 +88,32 @@ int AnalogOutput::openAnalogOutputPeriod(int header, int pint, int CyclePeriod)
 			if (pint == 14)
 			{
 				pwm_dir =  "ehrpwm.1:0/";
-				pin.openPin(header, pint, 6, true);
+				pin.openPin(header, pint, 6, true, true);
 			}
 			else if (pint ==16)
 			{
 				pwm_dir = "ehrpwm.1:1/";
-				pin.openPin(header, pint, 6, true);
+				pin.openPin(header, pint, 6, true, true);
 			}
 			else if (pint == 28)
 			{
 				pwm_dir = "ecap.2/";
-				pin.openPin(header, pint, 4, true);
+				pin.openPin(header, pint, 4, true, true);
 			}
 			else if (pint == 42)
 			{
 				pwm_dir ="ecap.0/";
-				pin.openPin(header, pint, 0, true);
+				pin.openPin(header, pint, 0, true, true);
 			}
 			else if (pint == 29)
 			{
 				pwm_dir = "ehrpwm.0:0/";
-				pin.openPin(header, pint, 1, true);
+				pin.openPin(header, pint, 1, true, true);
 			}
 			else if (pint == 31)
 			{
 				pwm_dir = "ehrpwm.0:1/";
-				pin.openPin(header, pint, 1, true);
+				pin.openPin(header, pint, 1, true, true);
 			}
 			else
 			{
@@ -204,33 +204,33 @@ int AnalogOutput::openAnalogOutput(int header, int pint, int Freq)
 		{
 
 				pwm_dir = "ehrpwm.2:0/";
-				pin.openPin(header, pint, 3, true);
+				pin.openPin(header, pint, 3, true, true);
 
 		}
 		else if (pint== 46)
 		{
 				pwm_dir = "ehrpwm.2:1/";
-				pin.openPin(header, pint, 3, true);
+				pin.openPin(header, pint, 3, true, true);
 		}
 		else if (pint == 34)
 		{
 			    pwm_dir = "ehrpwm.1:1";
-			    pin.openPin(header, pint, 2, true);
+			    pin.openPin(header, pint, 2, true, true);
 		}
 		else if(pint == 36)
 		{
 				pwm_dir = "ehrpwm.1:0/";
-				pin.openPin(header, pint, 2, true);
+				pin.openPin(header, pint, 2, true, true);
 		}
 		else if (pint == 13)
 		{
 				pwm_dir = "ehrpwm.2:1/";
-				pin.openPin(header, pint, 4, true);
+				pin.openPin(header, pint, 4, true, true);
 		}
 		else if(pint ==19)
 		{
 				pwm_dir = "ehrpwm.2:0/";
-				pin.openPin(header, pint, 4, true);
+				pin.openPin(header, pint, 4, true, true);
 		}
 		else
 		{
@@ -244,32 +244,32 @@ int AnalogOutput::openAnalogOutput(int header, int pint, int Freq)
 		if (pint == 14)
 		{
 			pwm_dir =  "ehrpwm.1:0/";
-			pin.openPin(header, pint, 6, true);
+			pin.openPin(header, pint, 6, true, true);
 		}
 		else if (pint ==16)
 		{
 			pwm_dir = "ehrpwm.1:1/";
-			pin.openPin(header, pint, 6, true);
+			pin.openPin(header, pint, 6, true, true);
 		}
 		else if (pint == 28)
 		{
 			pwm_dir = "ecap.2/";
-			pin.openPin(header, pint, 4, true);
+			pin.openPin(header, pint, 4, true, true);
 		}
 		else if (pint == 42)
 		{
 			pwm_dir ="ecap.0/";
-			pin.openPin(header, pint, 0, true);
+			pin.openPin(header, pint, 0, true, true);
 		}
 		else if (pint == 29)
 		{
 			pwm_dir = "ehrpwm.0:0/";
-			pin.openPin(header, pint, 1, true);
+			pin.openPin(header, pint, 1, true, true);
 		}
 		else if (pint == 31)
 		{
 			pwm_dir = "ehrpwm.0:1/";
-			pin.openPin(header, pint, 1, true);
+			pin.openPin(header, pint, 1, true, true);
 		}
 		else
 		{

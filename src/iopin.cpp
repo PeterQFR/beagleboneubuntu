@@ -22,7 +22,7 @@ char* iopin::getGPIONumber()
 	 * pin - 1 to 46
 	 * mode - 0 to 7
 	 */
-void iopin::openPin(int bank, int pin, int mode, bool pullup)
+void iopin::openPin(int bank, int pin, int mode, bool pullup, bool input)
 {
 
 
@@ -345,13 +345,20 @@ void iopin::openPin(int bank, int pin, int mode, bool pullup)
 	if (validpin)
 	{
 		char *basic;
-		if (pullup)
+		if (input)
 		{
-			basic ="3";
+			if (pullup)
+			{
+				basic ="3";
+			}
+			else if (!pullup)
+			{
+				basic="2";
+			}
 		}
-		else if (!pullup)
+		else if (!input)
 		{
-			basic="2";
+			basic="1";
 		}
 	//cout << "basic initiallised " << basic << endl;
 

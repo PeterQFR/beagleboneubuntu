@@ -29,7 +29,7 @@ int DigitalOutput::openDigitalOutput(int header, int pint)
 
 	bool direction_error, export_error;
 
-		pin.openPin(header, pint, 7, true);
+		pin.openPin(header, pint, 7, true, true);
 
 
 

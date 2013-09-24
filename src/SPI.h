@@ -8,7 +8,9 @@
 
 #include <stdint.h>
 #include <linux/spi/spidev.h>
-#include <iopin.h>
+#include "DigitalInput.h"
+#include "DigitalOutput.h"
+#include "iopin.h"
 
 #ifndef SPI_H_
 #define SPI_H_

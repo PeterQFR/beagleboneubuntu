@@ -15,10 +15,12 @@
 using namespace std;
 
 int main() {
-	SPI jointencoder = new SPI();
 
 
-	jointencoder.open(0,1);
+	SPI jointencoder;
+
+
+	jointencoder.open(2,0);
 
 	jointencoder.setSpeed(500000);
 	uint8_t* readbuf;
