@@ -5,11 +5,16 @@
  *  Created on: Jun 2, 2013
  *      Author: jacek
  */
+/*
+ * For use on the original beaglebone, A6. The user space SPI module is marked SPI1_0 on the pin outs. Therefore
+ * when the spi module is run it seems to only work on pins 28, 30, 32 in header 9. The pins in the 16-18 pin range
+ * are not available. No other setup of the pins is required.
+ */
+
 
 #include <stdint.h>
 #include <linux/spi/spidev.h>
-#include "DigitalInput.h"
-#include "DigitalOutput.h"
+
 #include "iopin.h"
 
 #ifndef SPI_H_

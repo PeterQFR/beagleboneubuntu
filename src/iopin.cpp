@@ -358,7 +358,14 @@ void iopin::openPin(int bank, int pin, int mode, bool pullup, bool input)
 		}
 		else if (!input)
 		{
-			basic="1";
+			if (pullup)
+			{
+				basic ="1";
+			}
+			else if (!pullup)
+			{
+				basic="0";
+			}
 		}
 	//cout << "basic initiallised " << basic << endl;
 

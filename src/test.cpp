@@ -22,14 +22,19 @@ int main() {
 
 	jointencoder.open(2,0);
 
-	jointencoder.setSpeed(500000);
-	uint8_t* readbuf;
+	printf("Encoder open \n");
+	jointencoder.setSpeed(1000000);
+	printf("speed set \n");
+	uint8_t readbuf[2];
 
 	while(1)
 	{
 		jointencoder.read(readbuf, 2);
-
-		printf("joint encoder %i \n", readbuf);
+		int read = 0;
+		read = readbuf[1]+readbuf[0]*255 + 2*(readbuf[1]&128);
+		read =(read & 65472);
+		read = read >> 5;
+		//printf("joint encoder %d \n", read);
 
 	}
 

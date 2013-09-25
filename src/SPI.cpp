@@ -38,14 +38,14 @@ int SPI::open(int bus, int channel)
 	//clk output
 	//di input
 	//cs output
-	if (channel==0)
+	/*if (channel==0)
 	{
 		MOSI.openPin(9, 18, 3, true, false);
 		MISO.openPin(9, 21, 3, true, true);
 		CS.openPin(9, 17, 3, true, false);
 		CLK.openPin(9, 22, 3, true, false);
 
-	}
+	}*/
 //	else if (channel==1)
 //	{
 //		MOSI.openPin(9, 29, 0, true);
@@ -68,6 +68,8 @@ int SPI::open(int bus, int channel)
 		printf("open(%s) failed\n", path);
 		return fd;
 	}
+
+
 
 	uint8_t tmp;
 	uint32_t tmp32;
