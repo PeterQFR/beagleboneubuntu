@@ -31,7 +31,7 @@ The AnalogIO uses the file system to achieve analogOutput (or PWM) on one of the
 The SPI source was taken from from prianna32's library on github https://github.com/piranha32/IOoo.git
 
 To use is fairly straight forward, no additional setup is required. I found only one SPI device is available in user space. This meant that only the pins marked spi1 (P9 header, pins 28- 31) worked in the following code example:
-<code>
+```
 #include "DigitalInput.h"
 #include "DigitalOutput.h"
 #include "AnalogOutput.h"
@@ -63,7 +63,7 @@ int main() {
 		//printf("joint encoder %d \n", read);
 
 	}
-<code>
+```
 
 I hope this helps implement your SPI application, as the library is a little difficult to decipher as it works using ioctl calls.
 
