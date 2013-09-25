@@ -10,10 +10,10 @@ This library is a library written in C++ for use with the beaglebone A6 variant.
 <b>DigitalIO.<b>
 
 The DigitalIO allows digital input and digital output for any pin on the P8 or P9 header. It uses the filesystem to access the pins. The pin first must be declared and initialised but prior to use must call openDigitalInput() or openDigitalOutput() and specify the pin that digitalIO function applies to. The pin is identified by the header number and pin number in the header e.g.
-
+```
 DigitalInput pin = new DigitalInput();
 pin.openDigitalInput(8, 43);
-
+```
 will initialise and open pin 43 on header 8 as a digital input. 
 
 The pin is polled by calling pin.read() and returns an integer equivalent to the voltage on the pin.
