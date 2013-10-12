@@ -5,7 +5,7 @@
  *      Author: jacek
  */
 
-#include "SPI.h"
+#include "../include/SPI.h"
 #include <errno.h>
 #include <stdlib.h>
 #include <stdio.h>

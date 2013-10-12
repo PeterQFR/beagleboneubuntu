@@ -1,3 +1,3 @@
-src/iopin.d: ../src/iopin.cpp ../src/iopin.h
+src/iopin.d: ../src/iopin.cpp ../src/../include/iopin.h
 
-../src/iopin.h:
+../src/../include/iopin.h:

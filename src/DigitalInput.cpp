@@ -11,7 +11,7 @@
  * 		- this description is to be kept at head of files using this
  *		 code.
  */
-#include "DigitalInput.h"
+#include "../include/DigitalInput.h"
 
 DigitalInput::DigitalInput()
 {

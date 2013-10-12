@@ -40,8 +40,11 @@ endif
 # All Target
 all: au.net.qfr.git.BeagleBoneUbuntu
 
+dependents:
+	-cd /home/petermilani/workspace/hmmv4_controller/Debug && $(MAKE) all
+
 # Tool invocations
-au.net.qfr.git.BeagleBoneUbuntu: $(OBJS) $(USER_OBJS)
+au.net.qfr.git.BeagleBoneUbuntu: $(OBJS) $(USER_OBJS) /home/petermilani/workspace/hmmv4_controller/Debug/hmmv4_controller
 	@echo 'Building target: $@'
 	@echo 'Invoking: GCC C++ Linker'
 	arm-linux-gnueabihf-g++ -L/usr/arm-linux-gnueabihf/lib -o "au.net.qfr.git.BeagleBoneUbuntu" $(OBJS) $(USER_OBJS) $(LIBS)
@@ -55,5 +58,6 @@ clean:
 
 .PHONY: all clean dependents
 .SECONDARY:
+/home/petermilani/workspace/hmmv4_controller/Debug/hmmv4_controller:
 
 -include ../makefile.targets

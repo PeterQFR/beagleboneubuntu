@@ -1,6 +1,6 @@
-src/DigitalInput.d: ../src/DigitalInput.cpp ../src/DigitalInput.h \
- ../src/iopin.h
+src/DigitalInput.d: ../src/DigitalInput.cpp \
+ ../src/../include/DigitalInput.h ../src/../include/iopin.h
 
-../src/DigitalInput.h:
+../src/../include/DigitalInput.h:
 
-../src/iopin.h:
+../src/../include/iopin.h:

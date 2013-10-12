@@ -4,7 +4,7 @@
  *  Created on: 05/08/2013
  *      Author: petermilani
  */
-#include "iopin.h"
+#include "../include/iopin.h"
 
 iopin::iopin()
 {

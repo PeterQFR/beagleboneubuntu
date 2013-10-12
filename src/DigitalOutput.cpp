@@ -12,7 +12,7 @@
  *		 code.
  */
 
-#include "DigitalOutput.h"
+#include "../include/DigitalOutput.h"
 
 DigitalOutput::DigitalOutput()
 {

@@ -1,5 +1,6 @@
-src/SPI.d: ../src/SPI.cpp ../src/SPI.h ../src/iopin.h
+src/SPI.d: ../src/SPI.cpp ../src/../include/SPI.h \
+ ../src/../include/iopin.h
 
-../src/SPI.h:
+../src/../include/SPI.h:
 
-../src/iopin.h:
+../src/../include/iopin.h:

@@ -8,6 +8,7 @@ CPP_SRCS += \
 ../src/DigitalInput.cpp \
 ../src/DigitalOutput.cpp \
 ../src/SPI.cpp \
+../src/hmmv4_configmsg.cpp \
 ../src/iopin.cpp \
 ../src/test.cpp 
 
@@ -16,6 +17,7 @@ OBJS += \
 ./src/DigitalInput.o \
 ./src/DigitalOutput.o \
 ./src/SPI.o \
+./src/hmmv4_configmsg.o \
 ./src/iopin.o \
 ./src/test.o 
 
@@ -24,6 +26,7 @@ CPP_DEPS += \
 ./src/DigitalInput.d \
 ./src/DigitalOutput.d \
 ./src/SPI.d \
+./src/hmmv4_configmsg.d \
 ./src/iopin.d \
 ./src/test.d 
 
@@ -32,7 +35,7 @@ CPP_DEPS += \
 src/%.o: ../src/%.cpp
 	@echo 'Building file: $<'
 	@echo 'Invoking: GCC C++ Compiler'
-	arm-linux-gnueabihf-g++ -I/usr/arm-linux-gnueabihf/include/c++/4.6.3 -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"$(@:%.o=%.d)" -MT"$(@:%.o=%.d)" -o "$@" "$<"
+	arm-linux-gnueabihf-g++ -I/usr/arm-linux-gnueabihf/include/c++/4.6.3 -I/home/petermilani/git/au.net.qfr.git.BeagleBoneUbuntu/include -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"$(@:%.o=%.d)" -MT"$(@:%.o=%.d)" -o "$@" "$<"
 	@echo 'Finished building: $<'
 	@echo ' '
 

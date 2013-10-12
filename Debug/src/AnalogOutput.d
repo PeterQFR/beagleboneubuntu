@@ -1,6 +1,6 @@
-src/AnalogOutput.d: ../src/AnalogOutput.cpp ../src/AnalogOutput.h \
- ../src/iopin.h
+src/AnalogOutput.d: ../src/AnalogOutput.cpp \
+ ../src/../include/AnalogOutput.h ../src/../include/iopin.h
 
-../src/AnalogOutput.h:
+../src/../include/AnalogOutput.h:
 
-../src/iopin.h:
+../src/../include/iopin.h:

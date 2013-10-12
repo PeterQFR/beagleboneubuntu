@@ -27,6 +27,7 @@
 								<option id="gnu.cpp.compiler.exe.debug.option.debugging.level.507691596" name="Debug Level" superClass="gnu.cpp.compiler.exe.debug.option.debugging.level" value="gnu.cpp.compiler.debugging.level.max" valueType="enumerated"/>
 								<option id="gnu.cpp.compiler.option.include.paths.932259243" name="Include paths (-I)" superClass="gnu.cpp.compiler.option.include.paths" valueType="includePath">
 									<listOptionValue builtIn="false" value="/usr/arm-linux-gnueabihf/include/c++/4.6.3"/>
+									<listOptionValue builtIn="false" value="/home/petermilani/git/au.net.qfr.git.BeagleBoneUbuntu/include"/>
 								</option>
 								<inputType id="cdt.managedbuild.tool.gnu.cpp.compiler.input.1515516642" superClass="cdt.managedbuild.tool.gnu.cpp.compiler.input"/>
 							</tool>
@@ -35,6 +36,7 @@
 								<option id="gnu.c.compiler.exe.debug.option.debugging.level.1314887931" name="Debug Level" superClass="gnu.c.compiler.exe.debug.option.debugging.level" value="gnu.c.debugging.level.max" valueType="enumerated"/>
 								<option id="gnu.c.compiler.option.include.paths.1697492098" name="Include paths (-I)" superClass="gnu.c.compiler.option.include.paths" valueType="includePath">
 									<listOptionValue builtIn="false" value="/usr/arm-linux-gnueabihf/include"/>
+									<listOptionValue builtIn="false" value="/home/petermilani/git/au.net.qfr.git.BeagleBoneUbuntu/include"/>
 								</option>
 								<inputType id="cdt.managedbuild.tool.gnu.c.compiler.input.1042718539" superClass="cdt.managedbuild.tool.gnu.c.compiler.input"/>
 							</tool>
@@ -43,19 +45,29 @@
 								<option id="gnu.cpp.link.option.paths.1228805006" name="Library search path (-L)" superClass="gnu.cpp.link.option.paths" valueType="libPaths">
 									<listOptionValue builtIn="false" value="/usr/arm-linux-gnueabihf/lib"/>
 								</option>
+								<option id="gnu.cpp.link.option.libs.1350301154" name="Libraries (-l)" superClass="gnu.cpp.link.option.libs" valueType="libs"/>
 								<inputType id="cdt.managedbuild.tool.gnu.cpp.linker.input.1454399997" superClass="cdt.managedbuild.tool.gnu.cpp.linker.input">
 									<additionalInput kind="additionalinputdependency" paths="$(USER_OBJS)"/>
 									<additionalInput kind="additionalinput" paths="$(LIBS)"/>
 								</inputType>
 							</tool>
 							<tool command="arm-linux-gnueabihf-as" id="cdt.managedbuild.tool.gnu.assembler.exe.debug.1580486523" name="GCC Assembler" superClass="cdt.managedbuild.tool.gnu.assembler.exe.debug">
+								<option id="gnu.both.asm.option.include.paths.98742162" name="Include paths (-I)" superClass="gnu.both.asm.option.include.paths" valueType="includePath"/>
 								<inputType id="cdt.managedbuild.tool.gnu.assembler.input.569422375" superClass="cdt.managedbuild.tool.gnu.assembler.input"/>
 							</tool>
 						</toolChain>
 					</folderInfo>
 				</configuration>
 			</storageModule>
-			<storageModule moduleId="org.eclipse.cdt.core.externalSettings"/>
+			<storageModule moduleId="org.eclipse.cdt.core.externalSettings">
+				<externalSettings containerId="hmmv4_controller;cdt.managedbuild.config.gnu.exe.debug.960697314" factoryId="org.eclipse.cdt.core.cfg.export.settings.sipplier">
+					<externalSetting>
+						<entry flags="VALUE_WORKSPACE_PATH" kind="includePath" name="/hmmv4_controller"/>
+						<entry flags="VALUE_WORKSPACE_PATH" kind="libraryPath" name="/hmmv4_controller/Debug"/>
+						<entry flags="RESOLVED" kind="libraryFile" name="hmmv4_controller"/>
+					</externalSetting>
+				</externalSettings>
+			</storageModule>
 		</cconfiguration>
 		<cconfiguration id="cdt.managedbuild.config.gnu.exe.release.827676251">
 			<storageModule buildSystemId="org.eclipse.cdt.managedbuilder.core.configurationDataProvider" id="cdt.managedbuild.config.gnu.exe.release.827676251" moduleId="org.eclipse.cdt.core.settings" name="Release">
@@ -115,12 +127,17 @@
 	<storageModule moduleId="cdtBuildSystem" version="4.0.0">
 		<project id="au.net.qfr.git.BeagleBoneUbuntu.cdt.managedbuild.target.gnu.exe.457176515" name="Executable" projectType="cdt.managedbuild.target.gnu.exe"/>
 	</storageModule>
+	<storageModule moduleId="refreshScope" versionNumber="1">
+		<resource resourceType="PROJECT" workspacePath="/au.net.qfr.git.BeagleBoneUbuntu"/>
+	</storageModule>
+	<storageModule moduleId="org.eclipse.cdt.internal.ui.text.commentOwnerProjectMappings"/>
+	<storageModule moduleId="org.eclipse.cdt.make.core.buildtargets"/>
 	<storageModule moduleId="scannerConfiguration">
 		<autodiscovery enabled="true" problemReportingEnabled="true" selectedProfileId=""/>
-		<scannerConfigBuildInfo instanceId="cdt.managedbuild.config.gnu.exe.release.827676251;cdt.managedbuild.config.gnu.exe.release.827676251.;cdt.managedbuild.tool.gnu.c.compiler.exe.release.326522265;cdt.managedbuild.tool.gnu.c.compiler.input.1212245748">
+		<scannerConfigBuildInfo instanceId="cdt.managedbuild.config.gnu.exe.debug.2486722;cdt.managedbuild.config.gnu.exe.debug.2486722.;cdt.managedbuild.tool.gnu.c.compiler.exe.debug.678202313;cdt.managedbuild.tool.gnu.c.compiler.input.1042718539">
 			<autodiscovery enabled="true" problemReportingEnabled="true" selectedProfileId="org.eclipse.cdt.managedbuilder.core.GCCManagedMakePerProjectProfileC"/>
 		</scannerConfigBuildInfo>
-		<scannerConfigBuildInfo instanceId="cdt.managedbuild.config.gnu.exe.debug.2486722;cdt.managedbuild.config.gnu.exe.debug.2486722.;cdt.managedbuild.tool.gnu.c.compiler.exe.debug.678202313;cdt.managedbuild.tool.gnu.c.compiler.input.1042718539">
+		<scannerConfigBuildInfo instanceId="cdt.managedbuild.config.gnu.exe.release.827676251;cdt.managedbuild.config.gnu.exe.release.827676251.;cdt.managedbuild.tool.gnu.c.compiler.exe.release.326522265;cdt.managedbuild.tool.gnu.c.compiler.input.1212245748">
 			<autodiscovery enabled="true" problemReportingEnabled="true" selectedProfileId="org.eclipse.cdt.managedbuilder.core.GCCManagedMakePerProjectProfileC"/>
 		</scannerConfigBuildInfo>
 		<scannerConfigBuildInfo instanceId="cdt.managedbuild.config.gnu.exe.debug.2486722;cdt.managedbuild.config.gnu.exe.debug.2486722.;cdt.managedbuild.tool.gnu.cpp.compiler.exe.debug.962376133;cdt.managedbuild.tool.gnu.cpp.compiler.input.1515516642">
@@ -130,8 +147,4 @@
 			<autodiscovery enabled="true" problemReportingEnabled="true" selectedProfileId="org.eclipse.cdt.managedbuilder.core.GCCManagedMakePerProjectProfileCPP"/>
 		</scannerConfigBuildInfo>
 	</storageModule>
-	<storageModule moduleId="refreshScope" versionNumber="1">
-		<resource resourceType="PROJECT" workspacePath="/au.net.qfr.git.BeagleBoneUbuntu"/>
-	</storageModule>
-	<storageModule moduleId="org.eclipse.cdt.internal.ui.text.commentOwnerProjectMappings"/>
 </cproject>

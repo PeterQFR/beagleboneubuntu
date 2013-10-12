@@ -1,12 +1,19 @@
-src/test.d: ../src/test.cpp ../src/DigitalInput.h ../src/iopin.h \
- ../src/DigitalOutput.h ../src/AnalogOutput.h ../src/SPI.h
+src/test.d: ../src/test.cpp \
+ /home/petermilani/git/au.net.qfr.git.BeagleBoneUbuntu/include/DigitalInput.h \
+ /home/petermilani/git/au.net.qfr.git.BeagleBoneUbuntu/include/iopin.h \
+ /home/petermilani/git/au.net.qfr.git.BeagleBoneUbuntu/include/DigitalOutput.h \
+ /home/petermilani/git/au.net.qfr.git.BeagleBoneUbuntu/include/AnalogOutput.h \
+ /home/petermilani/git/au.net.qfr.git.BeagleBoneUbuntu/include/SPI.h \
+ /home/petermilani/git/au.net.qfr.git.BeagleBoneUbuntu/include/hmmv4_configmsg.h
 
-../src/DigitalInput.h:
+/home/petermilani/git/au.net.qfr.git.BeagleBoneUbuntu/include/DigitalInput.h:
 
-../src/iopin.h:
+/home/petermilani/git/au.net.qfr.git.BeagleBoneUbuntu/include/iopin.h:
 
-../src/DigitalOutput.h:
+/home/petermilani/git/au.net.qfr.git.BeagleBoneUbuntu/include/DigitalOutput.h:
 
-../src/AnalogOutput.h:
+/home/petermilani/git/au.net.qfr.git.BeagleBoneUbuntu/include/AnalogOutput.h:
 
-../src/SPI.h:
+/home/petermilani/git/au.net.qfr.git.BeagleBoneUbuntu/include/SPI.h:
+
+/home/petermilani/git/au.net.qfr.git.BeagleBoneUbuntu/include/hmmv4_configmsg.h:

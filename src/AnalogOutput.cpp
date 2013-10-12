@@ -11,8 +11,7 @@
  * 		- this description is to be kept at head of files using this
  *		 code.
  */
-
-#include "AnalogOutput.h"
+#include "../include/AnalogOutput.h"
 
 AnalogOutput::AnalogOutput()
 {
